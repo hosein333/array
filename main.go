@@ -20,6 +20,7 @@ func main() {
 	printInteger()
 
 	s := []int{10, 20, 30, 40}
+	fmt.Println("len(s) :", len(s))
 	fmt.Println(s[0:])
 }
 
