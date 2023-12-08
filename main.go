@@ -20,7 +20,7 @@ func main() {
 	printInteger()
 
 	s := []int{10, 20, 30, 40}
-	fmt.Println(s[0:3])
+	fmt.Println(s[0:])
 }
 
 //This function can access the integerSlice because integerSlice is package scoped
