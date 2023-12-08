@@ -3,31 +3,27 @@ package main
 import "fmt"
 
 //Package scope array definition
-var integerArray [5]int
+var integerSlice []int
 
-var stringArray [4]string
+var stringSlice []string
 
 func main() {
 
-	integerArray[0] = 10
-	integerArray[1] = 20
-	integerArray[2] = 30
-	integerArray[3] = 40
-	integerArray[4] = 50
+	integerSlice = []int{10, 20, 30, 40}
 
-	fmt.Println("This is the integer Array: ", integerArray)
+	fmt.Println("This is the integer Slice: ", integerSlice)
 
-	stringArray[0] = "first"
-	stringArray[1] = "second"
-	stringArray[2] = "third"
-	stringArray[3] = "fourth"
+	stringSlice = []string{"first", "second", "third"}
 
-	fmt.Println("This is the string array: ", stringArray)
+	fmt.Println("This is the string slice: ", stringSlice)
 
-	integerArray := [5]int{10, 20, 30, 40, 50}
-	stringArray := [4]string{"first", "second", "third", "fourth"}
+	printInteger()
 
-	fmt.Println("This is the integer array: ", integerArray)
-	fmt.Println("This is the string array: ", stringArray)
+	s := []int{10, 20, 30, 40}
+	fmt.Println(s[0:2])
+}
 
+//This function can access the integerSlice because integerSlice is package scoped
+func printInteger() {
+	fmt.Println("Print the integers: ", integerSlice)
 }
