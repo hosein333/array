@@ -21,7 +21,7 @@ func main() {
 
 	s := []int{10, 20, 30, 40}
 	fmt.Println("len(s) :", len(s), "cap(s) : ", cap(s))
-	fmt.Println(s[0:2])
+	fmt.Println(s[:3])
 	for key, value := range s {
 	fmt.Println(key, value)
 	}
