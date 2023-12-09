@@ -20,7 +20,11 @@ func main() {
 	printInteger()
 
 	s := []int{10, 20, 30, 40}
+	fmt.Println("len(s) :", len(s), "cap(s) : ", cap(s))
 	fmt.Println(s[0:2])
+	for key, value := range s {
+	fmt.Println(key, value)
+	}
 }
 
 //This function can access the integerSlice because integerSlice is package scoped
