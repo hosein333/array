@@ -22,8 +22,16 @@ func main() {
 	s := []int{10, 20, 30, 40}
 	fmt.Println("len(s) :", len(s), "cap(s) : ", cap(s))
 	fmt.Println(s[:])
+
+
 	for key, value := range s {
 	fmt.Println(key, value)
+	}
+
+	fmt.Println("======================")
+
+	for i := 0; 1< len(s); i++ {
+		fmt.Println(i,s[i])
 	}
 }
 
