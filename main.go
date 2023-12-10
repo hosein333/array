@@ -9,7 +9,7 @@ type person struct {
 }
 
 func main() {
-	var p person = person{name: "mohammadjavad", family: "babayy", age: 20}
+	p := person{name: "mohammadjavad", family: "babayy", age: 20}
 
 	fmt.Println("age : ", p.age, "name : ",p.name, "family : ",p.family)
 }
