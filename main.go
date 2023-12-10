@@ -15,5 +15,5 @@ func main() {
 	p.family = "babayy"
 	p.name = "mohammadjavad"
 
-	fmt.Println(p)
+	fmt.Println("age : ", p.age, "name : ",p.name, "family : ",p.family)
 }
